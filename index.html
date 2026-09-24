@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#111014" />
+  <meta
+    name="description"
+    content="Aura Event — premium event management, elegant décor and seamless celebrations."
+  />
+  <title>AURA EVENT — Where Moments Become Memories</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Current EmailJS browser SDK -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" data-slide="home" aria-label="Aura Event home">
+      <span class="brand-logo-wrap">
+        <img
+          class="brand-logo"
+          src="assets/images/logo.png"
+          alt="Aura Event logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+        />
+        <span class="brand-fallback" aria-hidden="true">AURA <span>EVENT</span></span>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-link is-active" data-slide="home">Home</a>
+      <a href="#events" class="nav-link" data-slide="events">Our Events</a>
+      <a href="#contact" class="nav-link" data-slide="contact">Contact</a>
+      <a href="#reviews" class="nav-link" data-slide="reviews">Reviews</a>
+      <a href="#booking" class="nav-link nav-link--cta" data-slide="booking">Book Now</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <a href="#home" class="mobile-nav-link" data-slide="home">Home</a>
+      <a href="#events" class="mobile-nav-link" data-slide="events">Our Events</a>
+      <a href="#contact" class="mobile-nav-link" data-slide="contact">Contact</a>
+      <a href="#reviews" class="mobile-nav-link" data-slide="reviews">Reviews</a>
+      <a href="#booking" class="mobile-nav-link mobile-nav-link--cta" data-slide="booking">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <!-- SLIDE 1 -->
+    <section id="home" class="slide slide--hero reveal-section" data-section="home">
+      <div class="hero-layout shell">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            PREMIUM EVENT MANAGEMENT
+          </div>
+
+          <div class="hero-brand-lockup">
+            <img
+              class="hero-logo"
+              src="assets/images/logo.png"
+              alt="Aura Event logo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <div class="hero-brand-fallback" aria-hidden="true">
+              AURA <span>EVENT</span>
+            </div>
+          </div>
+
+          <h1 class="display-title">
+            Where Moments<br />
+            <em>Become Memories.</em>
+          </h1>
+
+          <p class="hero-description">
+            Thoughtfully planned celebrations, beautifully designed experiences, and seamless event
+            management — crafted around your vision.
+          </p>
+
+          <div class="hero-actions">
+            <button class="button button--primary" type="button" data-go="booking">
+              Plan Your Event <span class="button-arrow">↗</span>
+            </button>
+            <button class="button button--ghost" type="button" data-go="events">
+              View Our Events <span class="button-arrow">↓</span>
+            </button>
+          </div>
+
+          <div class="about-block">
+            <div class="about-heading">
+              <span class="section-kicker">ABOUT AURA EVENT</span>
+              <span class="about-rule"></span>
+            </div>
+            <p>
+              Aura Event is a professional event-management brand focused on creating beautifully
+              coordinated celebrations. From intimate family occasions to large-scale events, we bring
+              together planning, décor and execution to create experiences that feel effortless and memorable.
+            </p>
+
+            <div class="trust-row" aria-label="Service strengths">
+              <span>Premium Planning</span>
+              <span>Creative Décor</span>
+              <span>Seamless Execution</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-orbit" aria-hidden="true"></div>
+          <figure class="hero-media card-glow">
+            <img
+              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85"
+              alt="Elegant decorated celebration hall"
+            />
+            <figcaption class="hero-image-caption">
+              <span>CURATED CELEBRATIONS</span>
+              <span>CHENNAI • INDIA</span>
+            </figcaption>
+          </figure>
+          <div class="floating-note floating-note--one">
+            <span>01</span>
+            DETAILS MATTER
+          </div>
+          <div class="floating-note floating-note--two">
+            <span class="dot"></span>
+            YOUR VISION · OUR CRAFT
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer shell">
+        <div class="slide-index">01 <span>/</span> 05</div>
+        <button class="scroll-cue" type="button" data-go="events" aria-label="Scroll to events">
+          <span>Explore</span>
+          <span class="scroll-cue-icon">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section id="events" class="slide slide--events reveal-section" data-section="events">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> OUR WORK</div>
+            <h2 class="section-title">Moments We've <em>Created</em></h2>
+          </div>
+          <div class="section-header-copy">
+            <p>Explore a glimpse of the celebrations and experiences we've helped bring to life.</p>
+            <span class="section-stamp">DESIGNED WITH DETAIL<br />DELIVERED WITH CARE</span>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid" aria-label="Previous event gallery">
+          <button class="gallery-card gallery-card--large" type="button"
+            data-index="0"
+            data-title="Wedding Celebration"
+            data-image="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85" alt="Wedding celebration" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>01</small> Wedding Celebration <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="1"
+            data-title="Reception Setup"
+            data-image="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=85" alt="Reception setup" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>02</small> Reception Setup <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="2"
+            data-title="Birthday Celebration"
+            data-image="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=1600&q=85" alt="Birthday celebration" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>03</small> Birthday Celebration <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="3"
+            data-title="Engagement Decor"
+            data-image="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=85" alt="Engagement decoration" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>04</small> Engagement Decor <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="4"
+            data-title="Corporate Event"
+            data-image="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1600&q=85" alt="Corporate event" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>05</small> Corporate Event <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="5"
+            data-title="Traditional Ceremony"
+            data-image="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1600&q=85" alt="Traditional ceremony setup" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>06</small> Traditional Ceremony <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="6"
+            data-title="Private Party"
+            data-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=85" alt="Private party" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>07</small> Private Party <b>↗</b></span>
+          </button>
+
+          <button class="gallery-card" type="button"
+            data-index="7"
+            data-title="Stage Decoration"
+            data-image="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1600&q=85">
+            <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1600&q=85" alt="Event stage decoration" loading="lazy" />
+            <span class="gallery-overlay"></span>
+            <span class="gallery-label"><small>08</small> Stage Decoration <b>↗</b></span>
+          </button>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <strong>XX+</strong>
+            <span>Events</span>
+          </div>
+          <div class="stat">
+            <strong>XX+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="stat">
+            <strong>XX+</strong>
+            <span>Celebrations</span>
+          </div>
+          <div class="stats-note">Replace the XX+ values with the client's verified numbers.</div>
+        </div>
+      </div>
+
+      <div class="slide-footer shell">
+        <div class="slide-index">02 <span>/</span> 05</div>
+        <button class="scroll-cue" type="button" data-go="contact" aria-label="Scroll to contact">
+          <span>Next</span><span class="scroll-cue-icon">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section id="contact" class="slide slide--contact reveal-section" data-section="contact">
+      <div class="shell contact-shell">
+        <div class="section-header section-header--contact">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> CONNECT WITH US</div>
+            <h2 class="section-title">Stay Connected <em>With Aura</em></h2>
+          </div>
+          <p>Discover our latest celebrations, décor inspiration and behind-the-scenes moments.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="instagram-card card-glow">
+            <div class="instagram-top">
+              <div class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.5 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <span class="social-label">INSTAGRAM</span>
+            </div>
+            <div class="instagram-name">@auraevent</div>
+            <p>Follow Our Journey</p>
+            <a class="button button--dark" href="https://www.instagram.com/auraevent/" target="_blank" rel="noopener noreferrer">
+              View Instagram <span class="button-arrow">↗</span>
+            </a>
+            <div class="insta-preview">
+              <div><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Event preview" loading="lazy"></div>
+              <div><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=500&q=80" alt="Party preview" loading="lazy"></div>
+              <div><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=500&q=80" alt="Reception preview" loading="lazy"></div>
+            </div>
+            <span class="placeholder-note">Instagram URL is a placeholder — replace it with the client's account.</span>
+          </div>
+
+          <div class="contact-info">
+            <a class="contact-card contact-card--phone" href="tel:+91XXXXXXXXXX">
+              <span class="contact-card-icon">01</span>
+              <span>
+                <small>PHONE</small>
+                <strong>+91 XXXXX XXXXX</strong>
+                <em>Tap to call</em>
+              </span>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a class="contact-card contact-card--email" href="mailto:hello@auraevent.com">
+              <span class="contact-card-icon">02</span>
+              <span>
+                <small>EMAIL</small>
+                <strong>hello@auraevent.com</strong>
+                <em>Tap to email</em>
+              </span>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <div class="contact-card contact-card--location">
+              <span class="contact-card-icon">03</span>
+              <span>
+                <small>LOCATION</small>
+                <strong>Chennai, Tamil Nadu</strong>
+                <em>India</em>
+              </span>
+              <span class="contact-arrow">•</span>
+            </div>
+
+            <div class="contact-bottom-note">
+              <span>OUR APPROACH</span>
+              <p>Personal attention, thoughtful details and clear communication from the first conversation to the final moment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer shell">
+        <div class="slide-index">03 <span>/</span> 05</div>
+        <button class="scroll-cue" type="button" data-go="reviews" aria-label="Scroll to reviews">
+          <span>Reviews</span><span class="scroll-cue-icon">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section id="reviews" class="slide slide--reviews reveal-section" data-section="reviews">
+      <div class="shell reviews-shell">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> CLIENT VOICES</div>
+            <h2 class="section-title">What Our <em>Clients Say</em></h2>
+          </div>
+          <p>Every celebration is personal. Here's what our clients have shared about their experience.</p>
+        </div>
+
+        <div class="review-stage" aria-live="polite">
+          <button class="carousel-control carousel-control--prev" type="button" aria-label="Previous review">←</button>
+          <div class="review-track" id="reviewTrack">
+            <article class="review-card is-current">
+              <div class="review-top">
+                <span class="stars" aria-label="Five stars">★★★★★</span>
+                <span class="review-no">01</span>
+              </div>
+              <p class="review-text">
+                “A beautifully organised celebration from start to finish. The décor, coordination and attention to detail made the entire experience feel effortless.”
+              </p>
+              <div class="review-author">
+                <div class="avatar">C</div>
+                <div><strong>Client Name</strong><span>Wedding Celebration</span></div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <span class="stars" aria-label="Five stars">★★★★★</span>
+                <span class="review-no">02</span>
+              </div>
+              <p class="review-text">
+                “Our family celebration felt warm, polished and beautifully coordinated. The team listened carefully and brought the concept together with such care.”
+              </p>
+              <div class="review-author">
+                <div class="avatar">C</div>
+                <div><strong>Client Name</strong><span>Family Celebration</span></div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <span class="stars" aria-label="Five stars">★★★★★</span>
+                <span class="review-no">03</span>
+              </div>
+              <p class="review-text">
+                “From the first discussion to the event day, communication was clear and the details were thoughtfully handled. A very smooth planning experience.”
+              </p>
+              <div class="review-author">
+                <div class="avatar">C</div>
+                <div><strong>Client Name</strong><span>Reception Setup</span></div>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-control carousel-control--next" type="button" aria-label="Next review">→</button>
+        </div>
+
+        <div class="review-controls">
+          <div class="review-dots" id="reviewDots" aria-label="Review pages">
+            <button type="button" class="review-dot is-active" aria-label="Show review 1"></button>
+            <button type="button" class="review-dot" aria-label="Show review 2"></button>
+            <button type="button" class="review-dot" aria-label="Show review 3"></button>
+          </div>
+          <span class="review-note">Sample testimonials — replace with verified client reviews.</span>
+        </div>
+      </div>
+
+      <div class="slide-footer shell">
+        <div class="slide-index">04 <span>/</span> 05</div>
+        <button class="scroll-cue" type="button" data-go="booking" aria-label="Scroll to booking form">
+          <span>Book Now</span><span class="scroll-cue-icon">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section id="booking" class="slide slide--booking reveal-section" data-section="booking">
+      <div class="shell">
+        <div class="section-header section-header--booking">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> LET'S CREATE TOGETHER</div>
+            <h2 class="section-title">Let's Plan Your <em>Event</em></h2>
+          </div>
+          <p>Share a few details about your celebration and our team will get back to you with the next steps.</p>
+        </div>
+
+        <div class="booking-layout">
+          <aside class="booking-intro">
+            <div class="booking-number">05</div>
+            <div>
+              <span class="section-kicker">EVENT ENQUIRY</span>
+              <h3>Tell us what you're <em>imagining.</em></h3>
+              <p>
+                A few details help us understand your event, preferred scale and priorities before we speak with you.
+              </p>
+            </div>
+
+            <div class="booking-points">
+              <span><b>01</b> Event details</span>
+              <span><b>02</b> Guest &amp; budget range</span>
+              <span><b>03</b> Venue &amp; requirements</span>
+            </div>
+          </aside>
+
+          <div class="form-card card-glow">
+            <form id="eventForm" novalidate>
+              <input type="hidden" name="subject" value="AURA EVENT — NEW EVENT ENQUIRY" />
+              <div class="form-grid">
+                <div class="field field--full">
+                  <label for="fullName">Full Name <span>*</span></label>
+                  <input id="fullName" name="client_name" type="text" autocomplete="name" placeholder="Your full name" required />
+                  <small class="field-error" data-error-for="fullName"></small>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number <span>*</span></label>
+                  <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 XXXXX XXXXX" required />
+                  <small class="field-error" data-error-for="phone"></small>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address <span>*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                  <small class="field-error" data-error-for="email"></small>
+                </div>
+
+                <div class="field">
+                  <label for="eventType">Event Type <span>*</span></label>
+                  <select id="eventType" name="event_type" required>
+                    <option value="">Select event type</option>
+                    <option>Wedding</option>
+                    <option>Reception</option>
+                    <option>Engagement</option>
+                    <option>Birthday</option>
+                    <option>Anniversary</option>
+                    <option>Baby Shower</option>
+                    <option>Naming Ceremony</option>
+                    <option>Traditional Ceremony</option>
+                    <option>Private Party</option>
+                    <option>Corporate Event</option>
+                    <option>IT Event</option>
+                    <option>College Event</option>
+                    <option>Product Launch</option>
+                    <option>Conference</option>
+                    <option>Seminar</option>
+                    <option>Cultural Event</option>
+                    <option>Other</option>
+                  </select>
+                  <small class="field-error" data-error-for="eventType"></small>
+                </div>
+
+                <div class="field">
+                  <label for="eventDate">Event Date <span>*</span></label>
+                  <input id="eventDate" name="event_date" type="date" required />
+                  <small class="field-hint">Today or any future date.</small>
+                  <small class="field-error" data-error-for="eventDate"></small>
+                </div>
+
+                <div class="field">
+                  <label for="guests">Expected Guests <span>*</span></label>
+                  <input id="guests" name="expected_guests" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 150" required />
+                  <small class="field-error" data-error-for="guests"></small>
+                </div>
+
+                <div class="field">
+                  <label for="budget">Expected Budget <span>*</span></label>
+                  <select id="budget" name="expected_budget" required>
+                    <option value="">Select budget range</option>
+                    <option>Below ₹25,000</option>
+                    <option>₹25,000 – ₹50,000</option>
+                    <option>₹50,000 – ₹1,00,000</option>
+                    <option>₹1,00,000 – ₹2,50,000</option>
+                    <option>₹2,50,000 – ₹5,00,000</option>
+                    <option>₹5,00,000+</option>
+                    <option>Custom Budget</option>
+                  </select>
+                  <small class="field-error" data-error-for="budget"></small>
+                </div>
+
+                <div class="field field--full">
+                  <label for="venue">Preferred Location / Venue</label>
+                  <input id="venue" name="venue_location" type="text" placeholder="Venue name or preferred area" />
+                </div>
+
+                <div class="field field--full">
+                  <label for="requirements">Additional Requirements</label>
+                  <input id="requirements" name="additional_requirements" type="text" placeholder="Décor, stage, catering, photography, sound, etc." />
+                </div>
+
+                <div class="field field--full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Tell us a little about the event you're planning..."></textarea>
+                </div>
+              </div>
+
+              <div class="form-footer">
+                <div class="form-privacy">
+                  <span class="privacy-icon">✓</span>
+                  <span>Your enquiry is used only to discuss your event requirements.</span>
+                </div>
+                <button class="button button--primary button--submit" id="submitButton" type="submit">
+                  Send Event Enquiry <span class="button-arrow">↗</span>
+                </button>
+              </div>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+
+            <div class="success-panel" id="successPanel" hidden>
+              <div class="success-mark">✓</div>
+              <span class="section-kicker">ENQUIRY RECEIVED</span>
+              <h3>Thank you for reaching out to <em>Aura Event.</em></h3>
+              <p>
+                Our team will get back to you shortly to discuss your event details and plan the next steps.
+              </p>
+              <button type="button" class="button button--ghost" id="newEnquiryButton">Send another enquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer shell">
+        <div class="slide-index">05 <span>/</span> 05</div>
+        <a class="scroll-cue scroll-cue--last" href="#home">
+          <span>Back to top</span><span class="scroll-cue-icon">↑</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Event image viewer">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <button type="button" class="lightbox-nav lightbox-nav--prev" id="lightboxPrev" aria-label="Previous image">←</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption>
+        <span id="lightboxTitle"></span>
+        <strong id="lightboxCounter">01 / 08</strong>
+      </figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav lightbox-nav--next" id="lightboxNext" aria-label="Next image">→</button>
+  </div>
+
+  <div class="site-toast" id="siteToast" role="status" aria-live="polite"></div>
+</body>
+</html>
