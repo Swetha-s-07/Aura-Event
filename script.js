@@ -110,16 +110,19 @@
     });
   };
 
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        setActiveNav(entry.target.dataset.section);
-        entry.target.classList.add("is-visible");
-      });
-    },
-    { threshold: 0.42 }
-  );
+ const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      setActiveNav(entry.target.dataset.section);
+      entry.target.classList.add("is-visible");
+    });
+  },
+  {
+    threshold: 0.10
+  }
+);
 
   DOM.sections.forEach((section) => sectionObserver.observe(section));
 
