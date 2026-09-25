@@ -1762,6 +1762,7 @@ img {
     width: min(82vw, 470px);
     border-radius: 22px;
   }
+  
 
   .floating-note {
     font-size: 0.55rem;
@@ -1934,6 +1935,53 @@ img {
   .lightbox-close {
     top: 14px;
     right: 14px;
+  }
+}
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.site-footer {
+  padding: 28px 0;
+  color: rgba(255, 255, 255, 0.78);
+  background: var(--deep-black);
+  border-top: 1px solid rgba(201, 184, 232, 0.18);
+}
+
+.footer-inner {
+  width: var(--shell);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.footer-inner p:last-child {
+  color: var(--lavender);
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    padding: 22px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-inner p {
+    font-size: 0.62rem;
   }
 }
 
