@@ -1508,11 +1508,10 @@ img {
   visibility: visible;
   transform: translateY(0);
 }
-
 .reveal-section > * {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.75s ease, transform 0.8s var(--ease);
+  transform: translateY(18px);
+  transition: opacity 0.65s ease, transform 0.7s var(--ease);
 }
 
 .reveal-section.is-visible > * {
